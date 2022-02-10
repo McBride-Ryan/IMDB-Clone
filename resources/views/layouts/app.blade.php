@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li class="md:ml-16 mt-3 md:mt-0">
-                <a href="#" class="hover:text-gray-300">Movies</a>
+                <a href="{{route('movies')}}" class="hover:text-gray-300">Movies</a>
             </li>
             <li class="md:ml-6 mt-3 md:mt-0">
                 <a href="#" class="hover:text-gray-300">TV Shows</a>
@@ -28,7 +28,7 @@
                 <a href="#" class="hover:text-gray-300">Actors</a>
             </li>
         </ul>
-        <div class="flex flex-col md:flex-row items-center">
+        <div class="flex flex-col md:flex-row items-center sm:mt-3 md:mt-0">
             <div class="relative">
                 <input type="text" class="bg-gray-800 rounded-full w-64 px-4 py-1 pl-8 focus:outline-none focus:shadow-outline" placeholder="Search...">
                 <div class="absolute top-0">
@@ -37,7 +37,7 @@
             </div>
             <div class="md:ml-4 mt-3 md:mt-0">
                 <a href="#">
-                    <img src="/img/avatar.jpg" alt="avatar" class="rounded-full w-8 h-8">
+                    <img src="/images/avatar.jpg" alt="avatar" class="rounded-full w-8 h-8">
                 </a>
             </div>
         </div>
