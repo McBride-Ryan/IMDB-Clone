@@ -48,9 +48,11 @@ class MoviesController extends Controller
     }
 
 
-    public function show()
+    public function show($popularMovies)
     {
-        //
+        return view('details', [
+            'popularMovies' => $popularMovies
+        ]);
     }
 
 

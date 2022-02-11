@@ -5,11 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [MoviesController::class, 'index'])->name('index');
+Route::get('/movie/{id}', [MoviesController::class, 'show'])->name('movie');
 
-//Route::get('/', function () {
-//    return view('index');
-//})->name('index');
-
-Route::get('/movies', function () {
-    return view('details');
-})->name('movies');
+//Route::get('/movies', function () {
+//    return view('details');
+//})->name('movies');
