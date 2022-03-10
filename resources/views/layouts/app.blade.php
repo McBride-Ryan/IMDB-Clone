@@ -28,19 +28,18 @@
             <li class="md:ml-6 mt-3 md:mt-0">
                 <a href="#" class="hover:text-gray-300 hover:underline">TV Shows</a>
             </li>
-        {{--Call this 'Contribute'--}}
             <li class="md:ml-6 mt-3 md:mt-0">
-                <a href="/" class="hover:text-gray-300 hover:underline">Post</a>
+                <a href="{{route('posts')}}" class="hover:text-gray-300 hover:underline">Contribute</a>
             </li>
         </ul>
         <ul class="flex flex-col md:flex-row items-center sm:mt-3 md:mt-0">
             <livewire:search-dropdown/>
+            @auth
             <div class="md:ml-4 mt-3 md:mt-0">
                 <a href="#">
-                    <img src="/images/avatar.jpg" alt="avatar" class="rounded-full w-8 h-8">
+                    <img src="/images/avatar.jpg" alt="avatar" class="hover:opacity-75 transition ease-in-out duration-150 rounded-full w-8 h-8">
                 </a>
             </div>
-            @auth
                 <li class="md:ml-6 mt-3 md:mt-0 hover:text-gray-300 hover:underline">
                     <a href="/">{{auth()->user()->username}}</a>
                 </li>

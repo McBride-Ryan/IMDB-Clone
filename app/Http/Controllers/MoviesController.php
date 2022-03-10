@@ -28,7 +28,8 @@ class MoviesController extends Controller
             return [$genre['id'] => $genre['name']];
         });
 
-        return view('index', [
+//        dd(auth()->user()->posts);
+        return view('app', [
             'popularMovies' => $popularMovies,
             'genres' => $genres,
             'nowPlayingMovies' => $nowPlayingMovies
