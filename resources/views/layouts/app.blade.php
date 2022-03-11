@@ -29,7 +29,7 @@
                 <a href="#" class="hover:text-gray-300 hover:underline">TV Shows</a>
             </li>
             <li class="md:ml-6 mt-3 md:mt-0">
-                <a href="{{route('posts')}}" class="hover:text-gray-300 hover:underline">Contribute</a>
+                <a href="{{route('posts')}}" class="hover:text-gray-300 hover:underline">Discuss</a>
             </li>
         </ul>
         <ul class="flex flex-col md:flex-row items-center sm:mt-3 md:mt-0">
