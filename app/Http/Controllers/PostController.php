@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function index(){
 
-        $posts = Post::orderBy('created_at', 'desc')->simplePaginate(30);
+        $posts = Post::orderBy('created_at', 'desc')->with(['user','likes'])->simplePaginate(30);
 
         return view('posts.index', [
             'posts' => $posts
@@ -24,6 +24,12 @@ class PostController extends Controller
         $request->user()->posts()->create([
             'body'=> $request->body
         ]);
+        return back();
+    }
+
+    public function destroy(Post $post){
+        $this->authorize('delete', $post);
+        $post->delete();
         return back();
     }
 }
